@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div class="mt-4">
       <b-img
           src="https://im.kommersant.ru/Issues.photo/WEEKLY/2014/047/KMO_141084_00004_1_t218_055842.jpg"
           fluid-grow
@@ -13,12 +13,16 @@
       </b-jumbotron>
     </div>
 
-    <h1><b-badge>Меню</b-badge></h1>
-    <TheMenu />
+    <div class="mt-4">
+      <h1><b-badge>Меню</b-badge></h1>
+      <TheMenu />
+    </div>
 
-    <h1><b-badge>Только цены</b-badge></h1>
-    <div>
-      <b-table striped hover :items="items"></b-table>
+    <div class="mt-4">
+      <h1><b-badge>Только цены</b-badge></h1>
+      <div>
+        <b-table striped hover :items="items"></b-table>
+      </div>
     </div>
   </div>
 </template>
