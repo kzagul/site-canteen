@@ -26,15 +26,20 @@
         <b-table striped hover :items="items"></b-table>
       </div>
     </div>
+
+    <h1><b-badge>Только цены</b-badge></h1>
+    <PriceTable />
   </div>
 </template>
 
 <script>
 import TheMenu from "../components/TheMenu.vue";
+import PriceTable from "../components/tables/PriceTable.vue";
 export default {
   name: "IndexPage",
   components: {
     TheMenu,
+    PriceTable
   },
   data() {
     return {
