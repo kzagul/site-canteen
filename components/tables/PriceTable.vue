@@ -1,5 +1,5 @@
 <template>
-  <b-tabs>
+  <b-tabs pills>
     <b-tab v-for="el in itemsTypes" :key="el.type" no-body :title="el.type">
       <div class="mt-4">
         <b-table
