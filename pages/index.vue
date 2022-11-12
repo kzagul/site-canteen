@@ -20,13 +20,6 @@
       <TheMenu />
     </div>
 
-    <div class="mt-4">
-      <h1><b-badge>Только цены</b-badge></h1>
-      <div>
-        <b-table striped hover :items="items"></b-table>
-      </div>
-    </div>
-
     <h1><b-badge>Только цены</b-badge></h1>
     <PriceTable />
   </div>
