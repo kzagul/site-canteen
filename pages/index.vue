@@ -1,27 +1,23 @@
 <template>
   <div>
-    <div class="mt-4">
-      <b-img
-          src="https://im.kommersant.ru/Issues.photo/WEEKLY/2014/047/KMO_141084_00004_1_t218_055842.jpg"
-          fluid-grow
-        ></b-img>
-      <b-jumbotron
-        header="Вкусно, быстро, рядом с дорогой"
-        lead="Узнать актуальную информацию по еде"
-      >
+    <div class="mt-5">
+      <b-img src="https://im.kommersant.ru/Issues.photo/WEEKLY/2014/047/KMO_141084_00004_1_t218_055842.jpg" fluid-grow></b-img>
+      <b-jumbotron header="Вкусно, быстро, рядом с дорогой" lead="Узнать актуальную информацию по еде">
         <b-button variant="primary" href="#">Перейти к меню</b-button>
       </b-jumbotron>
     </div>
 
-    <div class="mt-4">
+    <div class="mt-5">
       <h1><b-badge>Меню</b-badge></h1>
       <b-button variant="primary" href="#">Карточки</b-button>
       <b-button variant="primary" href="#">Таблица</b-button>
       <TheMenu />
     </div>
 
-    <h1><b-badge>Только цены</b-badge></h1>
-    <PriceTable />
+    <div class="mt-5 mb-5">
+      <h1><b-badge>Только цены</b-badge></h1>
+      <PriceTable />
+    </div>
   </div>
 </template>
 
