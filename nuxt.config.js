@@ -53,6 +53,12 @@ export default {
   build: {
     analyze: {
       analyzerMode: 'static'
-    }
+    },
+    // transpile: [
+    //   '@sindresorhus/slugify',
+    //   '@sindresorhus/transliterate',
+    //   'hast-util-select',
+    // ],
+    standalone: true
   }
 }

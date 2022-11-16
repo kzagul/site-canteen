@@ -14,6 +14,8 @@
       <TheMenu />
     </div>
 
+    <SliderVue />
+
     <div class="mt-5 mb-5">
       <h1><b-badge>Только цены</b-badge></h1>
       <PriceTable :items="items"/>
@@ -24,11 +26,13 @@
 <script>
 import TheMenu from "../components/TheMenu.vue";
 import PriceTable from "../components/tables/PriceTable.vue";
+import SliderVue from "../components/Slider.vue";
 export default {
   name: "IndexPage",
   components: {
     TheMenu,
-    PriceTable
+    PriceTable,
+    SliderVue
   },
   data() {
     return {
