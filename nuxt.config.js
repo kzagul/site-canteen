@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  ssr: true,
   target: 'static',
   head: {
     title: 'site-canteen',
@@ -40,10 +41,18 @@ export default {
   ],
 
   bootstrapVue: {
-    icons: true
+    icons: true,
+    componentPlugins: [] //import all plugins
+  },
+
+  axios: {
+    baseURL: '/api/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    analyze: {
+      analyzerMode: 'static'
+    }
   }
 }
