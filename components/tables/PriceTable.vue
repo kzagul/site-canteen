@@ -214,10 +214,13 @@ export default {
           return { text: f.label, value: f.key };
         });
     },
+    totalRows() {
+      return this.items.length;
+    }
   },
   mounted() {
     // Set the initial number of items
-    this.totalRows = this.items.length;
+    // this.totalRows = this.items.length;
   },
   methods: {
     info(item, index, button) {
