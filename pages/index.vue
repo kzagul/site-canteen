@@ -8,6 +8,10 @@
     </div>
 
     <div class="mt-5">
+      <AboutBlockVue />
+    </div>
+
+    <div class="mt-5">
       <h1><b-badge>Меню</b-badge></h1>
       <b-button variant="primary" href="#">Карточки</b-button>
       <b-button variant="primary" href="#">Таблица</b-button>
@@ -27,12 +31,15 @@
 import TheMenu from "../components/TheMenu.vue";
 import PriceTable from "../components/tables/PriceTable.vue";
 import SliderVue from "../components/Slider.vue";
+import AboutBlockVue from "../components/blocks/AboutBlock.vue";
+
 export default {
   name: "IndexPage",
   components: {
     TheMenu,
     PriceTable,
-    SliderVue
+    SliderVue,
+    AboutBlockVue
   },
   data() {
     return {
