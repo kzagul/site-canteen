@@ -3,39 +3,34 @@
         <ul class="list-unstyled">
             <b-media tag="li">
             <template #aside>
-                <b-img blank blank-color="#abc" width="64" alt="placeholder"></b-img>
+                <b-img src="https://cdn-icons-png.flaticon.com/512/810/810478.png" width="64" alt="placeholder"></b-img>
             </template>
-            <h5 class="mt-0 mb-1">List-based media object</h5>
+            <h5 class="mt-0 mb-1">Заказы на вынос</h5>
             <p class="mb-0">
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+               Позвоните нам, мы сделаем и упакуем вам заказ заранее
             </p>
             </b-media>
 
             <b-media tag="li" class="my-4">
+
             <template #aside>
-            <b-img blank blank-color="#cba" width="64" alt="placeholder"></b-img>
+                <b-img src="https://cdn-icons-png.flaticon.com/512/2490/2490764.png"  width="64" alt="placeholder"></b-img>
             </template>
 
-            <h5 class="mt-0 mb-1">List-based media object</h5>
+            <h5 class="mt-0 mb-1">Поминальные обеды</h5>
             <p class="mb-0">
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                У нас вы можете собрать всех родных
             </p>
             </b-media>
 
             <b-media tag="li">
             <template #aside>
-                <b-img blank blank-color="#bac" width="64" alt="placeholder"></b-img>
+                <b-img src="https://cdn-icons-png.flaticon.com/512/6143/6143607.png" width="64" alt="placeholder"></b-img>
             </template>
 
-            <h5 class="mt-0 mb-1">List-based media object</h5>
+            <h5 class="mt-0 mb-1">Проведение банкетов</h5>
             <p class="mb-0">
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-                ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                Мы подготовим для вас наш зал, для проведения вашего праздника
             </p>
             </b-media>
         </ul>

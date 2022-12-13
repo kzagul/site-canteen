@@ -1,25 +1,16 @@
 <template>
-  <div class="flex items-center justify-center h-screen relative">
+  <div class="flex items-center justify-center h-screen">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide " v-for="sportObject in sportObjects" :key="sportObject.id">
           <ProductCard :sportObjects="sportObject"/>
         </div>
-        <!-- <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div> -->
       </div>
     </div>
-    <!-- If pagination is needed -->
-    <!-- <div class="swiper-pagination"></div> -->
+    <div class="swiper-pagination" style="bottom: auto;"></div>
     <!-- If navigation buttons are needed -->
-    <!-- <div class="swiper-button-prev"></div> -->
-    <!-- <div class="swiper-button-next"></div> -->
+    <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
   </div>
 </template>
 <script>
@@ -32,63 +23,66 @@ import ProductCard from "@/components/productcard";
 
 export default {
   components: { ProductCard },
+  props: {
+    sportObjects: {
+      type: Array
+    }
+  },
   data() {
     return {
-      sportObjects: [
-        {
-          id: 1,
-          name: "Гречка",
-          image:
-            "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
-        },
-        {
-          id: 2,
-          name: "Гречка",
-          image:
-            "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
-        },
-        {
-          id: 3,
-          name: "Гречка",
-          image:
-            "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
-        },
-        {
-          id: 4,
-          name: "Гречка",
-          image:
-            "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
-        },
-        {
-          id: 5,
-          name: "Гречка",
-          image:
-            "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
-        },
-        {
-          id: 6,
-          name: "Гречка",
-          image:
-            "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
-        },
-        {
-          id: 7,
-          name: "Гречка",
-          image:
-            "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
-        },
-      ],
+      // sportObjects: [
+      //   {
+      //     id: 1,
+      //     name: "Гречка",
+      //     image:
+      //       "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+      //   },
+      //   {
+      //     id: 2,
+      //     name: "Гречка",
+      //     image:
+      //       "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+      //   },
+      //   {
+      //     id: 3,
+      //     name: "Гречка",
+      //     image:
+      //       "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+      //   },
+      //   {
+      //     id: 4,
+      //     name: "Гречка",
+      //     image:
+      //       "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+      //   },
+      //   {
+      //     id: 5,
+      //     name: "Гречка",
+      //     image:
+      //       "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+      //   },
+      //   {
+      //     id: 6,
+      //     name: "Гречка",
+      //     image:
+      //       "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+      //   },
+      //   {
+      //     id: 7,
+      //     name: "Гречка",
+      //     image:
+      //       "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+      //   },
+      // ],
     };
   },
   mounted() {
     // configure Swiper to use modules. The modules were tested with SwiperJS v6.8.4 with NuxtJS v2.15.7
-    // previously it was before export default. Moved here for performance issues. Move back in case of problems.
-    // init Swiper:  eslint-disable used for deleting error of unsued const swiper
     /* eslint-disable no-unused-vars */
     const swiper = new Swiper(".swiper", {
       // Optional parameters
       // @see https://swiperjs.com/swiper-api#parameters
-      loop: false,
+      loop: true,
       effect: "cards",
       grabCursor: true,
       // remove unused modules if needed
@@ -101,13 +95,30 @@ export default {
       },
       // Autoplay if needed
       autoplay: {
-        delay: 1500,
+        delay: 3000,
       },
       // Navigation arrows if needed
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      breakpoints: {
+    // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        }
+      }
     });
     // you can use different options later
     swiper.on("activeIndexChange", (swiper) => {
@@ -119,8 +130,8 @@ export default {
 
 <style lang="css" scoped>
 .swiper {
-  width: 240px;
-  height: 320px;
+  width: 100%;
+  height: 350px;
 }
 
 .swiper-slide {
@@ -133,43 +144,5 @@ export default {
   /* color: #fff; */
 }
 
-.swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
-}
-
-.swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
-}
-
-.swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
-}
-
-.swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
-}
-
-.swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
-}
-
-.swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
-}
-
-.swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
-}
-
-.swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
-}
-
-.swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
-}
 </style>
+§§

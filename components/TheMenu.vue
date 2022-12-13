@@ -2,7 +2,6 @@
   <div>
     <b-row cols="1" cols-sm="2" cols-md="3" cols-lg="4">
       <b-col v-for="item in sportObjects" :key="item.name" class="d-flex justify-content-center">
-      <!-- <b-col v-for="item in sportObjects" :key="item.name" class="d-flex justify-content-center"> -->
       <ProductCard :sportObjects="item" />
     </b-col>
     </b-row>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-vh">
     <TheHeader />
     <b-container>
       <Nuxt />
@@ -19,3 +19,9 @@ export default {
   components: { TheHeader, TheFooter },
 };
 </script>
+
+<style>
+.main-vh{
+  height: 100vh;
+}
+</style>

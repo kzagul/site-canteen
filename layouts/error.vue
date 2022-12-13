@@ -7,7 +7,7 @@
         {{ otherError }}
       </h1>
       <NuxtLink to="/">
-        Упс... кажется произошла ошибочка
+        Вернуться на главную страницу
       </NuxtLink>
     </v-app>
   </template>
@@ -24,8 +24,8 @@
     },
     data () {
       return {
-        pageNotFound: '404 Not Found',
-        otherError: 'An error occurred'
+        pageNotFound: '404 Страница не найдена',
+        otherError: 'Произошла ошибка'
       }
     },
     head () {

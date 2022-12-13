@@ -1,10 +1,21 @@
 <template>
-  <div>
+  <div class="w-100">
     <div class="mt-5">
-      <b-img src="https://im.kommersant.ru/Issues.photo/WEEKLY/2014/047/KMO_141084_00004_1_t218_055842.jpg" fluid-grow></b-img>
-      <b-jumbotron header="Вкусно, быстро, рядом с дорогой" lead="Узнать актуальную информацию по еде">
+      <b-card
+        overlay
+        img-src="https://im.kommersant.ru/Issues.photo/WEEKLY/2014/047/KMO_141084_00004_1_t218_055842.jpg"
+        img-alt="Card Image"
+        text-variant="white"
+      >
+        <b-card-text style="background: rgba(0, 0, 0, 0.2);">
+          <h1 style="font-size: min(max(16px, 5vw), 6vw);">Вкусно, быстро, рядом с дорогой! </h1>
+        </b-card-text>
+      </b-card>
+      <div>
+      <b-jumbotron class="text-dark" bg-variant="transparent" lead="Узнать актуальную информацию по еде">
         <b-button variant="primary" href="#">Перейти к меню</b-button>
       </b-jumbotron>
+    </div>
     </div>
 
     <div class="mt-5">
@@ -13,12 +24,11 @@
 
     <div class="mt-5">
       <h1><b-badge>Меню</b-badge></h1>
-      <b-button variant="primary" href="#">Карточки</b-button>
-      <b-button variant="primary" href="#">Таблица</b-button>
-      <TheMenu />
+      <!-- <TheMenu /> -->
     </div>
 
-    <SliderVue />
+
+    <SliderVue :sportObjects="items"/>
 
     <div class="mt-5 mb-5">
       <h1><b-badge>Только цены</b-badge></h1>
@@ -57,6 +67,7 @@ export default {
           weight: "100г",
           price: "55-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 2,
@@ -65,6 +76,7 @@ export default {
           weight: "100г",
           price: "55-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 3,
@@ -73,6 +85,7 @@ export default {
           weight: "100г",
           price: "55-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 4,
@@ -81,6 +94,7 @@ export default {
           weight: "100г",
           price: "55-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 5,
@@ -89,6 +103,7 @@ export default {
           weight: "100г",
           price: "50-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 6,
@@ -97,6 +112,7 @@ export default {
           weight: "150г",
           price: "70-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 7,
@@ -105,6 +121,7 @@ export default {
           weight: "100г",
           price: "45-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 8,
@@ -113,6 +130,7 @@ export default {
           weight: "100г",
           price: "45-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 9,
@@ -121,6 +139,7 @@ export default {
           weight: "100г",
           price: "45-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 10,
@@ -129,6 +148,7 @@ export default {
           weight: "100г",
           price: "45-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 11,
@@ -137,6 +157,7 @@ export default {
           weight: "300г",
           price: "75-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 12,
@@ -145,6 +166,7 @@ export default {
           weight: "300г",
           price: "75-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 13,
@@ -153,6 +175,7 @@ export default {
           weight: "300г",
           price: "70-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 14,
@@ -161,6 +184,7 @@ export default {
           weight: "300г",
           price: "70-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 15,
@@ -169,6 +193,7 @@ export default {
           weight: "300г",
           price: "70-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 16,
@@ -177,6 +202,7 @@ export default {
           weight: "300г",
           price: "60-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
           id: 17,
@@ -185,6 +211,7 @@ export default {
           weight: "100г",
           price: "90-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
       ],
       itemsTypes: [
@@ -199,3 +226,6 @@ export default {
   },
 };
 </script>
+
+<style>
+</style>
