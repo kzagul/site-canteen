@@ -1,5 +1,5 @@
 <template>
-  <b-tabs pills>
+  <b-tabs pills small>
     <b-tab v-for="el in itemsTypes" :key="el.type" no-body :title="el.type">
       <div class="mt-4">
         <b-table
@@ -10,16 +10,17 @@
           :sort-desc.sync="sortDesc"
           sort-icon-left
         >
-          <template #cell(actions)="row">
+          <!-- <template v-if="el.type === `Холодные закуски`" #cell(actions)="row">
             <b-button size="sm" @click="row.toggleDetails">
               {{ row.detailsShowing ? "Спрятать" : "Показать" }}
             </b-button>
           </template>
+          
           <template #row-details="row">
             <b-card>
               {{ row.item.recipe }}
             </b-card>
-          </template>
+          </template> -->
         </b-table>
       </div>
     </b-tab>
@@ -41,7 +42,7 @@ export default {
         { key: "name", label: "Название" },
         { key: "weight", label: "Выход порции" },
         { key: "price", label: "Цена: руб", sortable: true },
-        { key: "actions", label: "Состав" },
+        // { key: "actions", label: "Состав" },
       ],
       itemsTypes: [
         { type: "Холодные закуски"},
@@ -51,148 +52,6 @@ export default {
         { type: "Выпечка"},
         { type: "Напитки"}
       ],
-      // items: [
-      //   {
-      //     id: 1,
-      //     type: "Холодные закуски",
-      //     name: "Салат Гастрономический",
-      //     weight: "100г",
-      //     price: "55-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 2,
-      //     type: "Холодные закуски",
-      //     name: "Салат Купеческий",
-      //     weight: "100г",
-      //     price: "55-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 3,
-      //     type: "Холодные закуски",
-      //     name: "Салат Ермак",
-      //     weight: "100г",
-      //     price: "55-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 4,
-      //     type: "Холодные закуски",
-      //     name: "Салат Восторг",
-      //     weight: "100г",
-      //     price: "55-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 5,
-      //     type: "Холодные закуски",
-      //     name: "Салат Крабик",
-      //     weight: "100г",
-      //     price: "50-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 6,
-      //     type: "Холодные закуски",
-      //     name: "Салат Сельдь под шубой",
-      //     weight: "150г",
-      //     price: "70-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 7,
-      //     type: "Холодные закуски",
-      //     name: "Закуска Русская",
-      //     weight: "100г",
-      //     price: "45-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 8,
-      //     type: "Холодные закуски",
-      //     name: "Салат из свеклы с сыром",
-      //     weight: "100г",
-      //     price: "45-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 9,
-      //     type: "Холодные закуски",
-      //     name: "Винегрет",
-      //     weight: "100г",
-      //     price: "45-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 10,
-      //     type: "Холодные закуски",
-      //     name: "Салат из капусты с огурцом",
-      //     weight: "100г",
-      //     price: "45-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 11,
-      //     type: "Первые блюда",
-      //     name: "Харчо",
-      //     weight: "300г",
-      //     price: "75-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 12,
-      //     type: "Первые блюда",
-      //     name: "Солянка по-домашнему",
-      //     weight: "300г",
-      //     price: "75-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 13,
-      //     type: "Первые блюда",
-      //     name: "Борщ",
-      //     weight: "300г",
-      //     price: "70-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 14,
-      //     type: "Первые блюда",
-      //     name: "Рассольник",
-      //     weight: "300г",
-      //     price: "70-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 15,
-      //     type: "Первые блюда",
-      //     name: "Суп гороховый с копченостями",
-      //     weight: "300г",
-      //     price: "70-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 16,
-      //     type: "Первые блюда",
-      //     name: "Суп-лапша с курицей",
-      //     weight: "300г",
-      //     price: "60-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      //   {
-      //     id: 17,
-      //     type: "Вторые блюда",
-      //     name: "Котлета домашняя",
-      //     weight: "100г",
-      //     price: "90-00",
-      //     recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-      //   },
-      // ],
-    //   totalRows: 1,
-    //   currentPage: 1,
-    //   perPage: 5,
-    //   pageOptions: [5, 10, 15, { value: 100, text: "Show a lot" }],
       sortBy: "",
       sortDesc: false,
       sortDirection: "asc",
@@ -216,7 +75,7 @@ export default {
     },
     totalRows() {
       return this.items.length;
-    }
+    },
   },
   mounted() {
     // Set the initial number of items
@@ -235,7 +94,7 @@ export default {
 
     filterMenu(items, type){
         return items.filter(item => item.type == type);
-    }
+    },
   },
 };
 </script>

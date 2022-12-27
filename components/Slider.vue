@@ -8,19 +8,13 @@
       </div>
     </div>
     <div class="swiper-pagination" style="bottom: auto;"></div>
-    <!-- If navigation buttons are needed -->
-    <!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
   </div>
 </template>
+
 <script>
-// import Swiper JS
-// add or remove unused modules
 import { Swiper, Navigation, Pagination, EffectCards, Autoplay } from "swiper";
 import "swiper/swiper-bundle.min.css";
-
 import ProductCard from "@/components/productcard";
-
 export default {
   components: { ProductCard },
   props: {
@@ -131,13 +125,15 @@ export default {
 <style lang="css" scoped>
 .swiper {
   width: 100%;
-  height: 350px;
+  height: 250px;
 }
 
 .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* height: 200px; */
+
   /* border-radius: 18px; */
   /* font-size: 22px; */
   /* font-weight: bold; */

@@ -1,70 +1,17 @@
 <template>
-  <div class="w-100">
-    <div class="mt-5">
-      <b-card
-        overlay
-        img-src="../assets/back_photo.jpeg"
-        img-alt="Card Image"
-        text-variant="white"
-      >
-        <b-card-text style="background: rgba(0, 0, 0, 0.05);">
-          <h1 style="font-size: min(max(16px, 5vw), 6vw);">Вкусно, быстро, рядом с дорогой! </h1>
-        </b-card-text>
-      </b-card>
-      <div>
-      <b-jumbotron class="text-dark d-flex flex-column flex-md-row align-items-center py-5 justify-content-center" bg-variant="transparent">
-        <p class="lead m-0">Узнать актуальную информацию по еде</p>
-        <b-button variant="primary" class="mt-3 mt-md-0 ml-3">
-          <b-link to="menu" style="color: white;">Перейти к меню</b-link>
-        </b-button>
-      </b-jumbotron>
-    </div>
-    </div>
-
-    <div class="mt-5">
-      <AboutBlockVue />
-    </div>
-
-    <div class="mt-5 mb-2">
-      <h1>Еда</h1>
-      <!-- <TheMenu /> -->
-    </div>
-
-
-    <SliderVue :sportObjects="items"/>
-    <!-- <SliderVue :sportObjects="items"/>
-    <SliderVue :sportObjects="items"/> -->
-
-    <b-media>
-      <h5 class="mt-4 mb-1">Горячие блюда</h5>
-      <p class="mb-0">
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-      </p>
-    </b-media>
-    
-
     <div class="mt-5 mb-5">
-      <h1 class="my-4">Только цены</h1>
-      <PriceTable :items="items"/>
+        <h1 class="my-4">Только цены</h1>
+        <PriceTable :items="items"/>
     </div>
-  </div>
 </template>
 
 <script>
-import TheMenu from "../components/TheMenu.vue";
 import PriceTable from "../components/tables/PriceTable.vue";
-import SliderVue from "../components/Slider.vue";
-import AboutBlockVue from "../components/blocks/AboutBlock.vue";
 
 export default {
   name: "IndexPage",
   components: {
-    TheMenu,
     PriceTable,
-    SliderVue,
-    AboutBlockVue
   },
   data() {
     return {
@@ -254,7 +201,5 @@ export default {
     }
   }
 };
-</script>
 
-<style>
-</style>
+</script>

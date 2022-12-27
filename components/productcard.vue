@@ -1,17 +1,12 @@
 <template>
   <div>
-    <b-card :img-src="sportObjects.image" img-alt="Image" img-top tag="article" style="width: 16rem; height: 350px" class="mb-2">
+    <b-card :img-src="sportObjects.image" img-alt="Image" img-top tag="article" style="width: 16rem; height: 200px" class="mb-2">
       <!-- <b-card-title> {{ sportObjects.name }} </b-card-title> -->
       <!-- <b-list-group flush>
         <b-list-group-item>Горячее блюдо</b-list-group-item>
       </b-list-group> -->
-      <!-- <b-card-text> Краткое описание </b-card-text> -->
+      <b-card-text> {{ sportObjects.name }} </b-card-text>
 
-      <!-- <b-card-body>
-      </b-card-body> -->
-      <template #footer>
-        <em>{{ sportObjects.name }}</em>
-      </template>
     </b-card>
   </div>
 </template>
