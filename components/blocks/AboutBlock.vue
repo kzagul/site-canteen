@@ -3,7 +3,7 @@
         <ul class="list-unstyled">
             <b-media tag="li">
                 <template #aside>
-                    <b-img src="https://cdn-icons-png.flaticon.com/512/810/810478.png" width="64" alt="placeholder"></b-img>
+                    <b-img src="../../assets/about-pic1.png" width="64" height="64" alt="placeholder"></b-img>
                 </template>
                 <h5 class="mt-0 mb-1">Заказы на вынос</h5>
                 <p class="mb-0">
@@ -13,7 +13,7 @@
 
             <b-media tag="li" class="my-5">
                 <template #aside>
-                    <b-img src="https://cdn-icons-png.flaticon.com/512/2490/2490764.png"  width="64" alt="placeholder"></b-img>
+                    <b-img src="../../assets/about-pic2.png"  width="64" height="64" alt="placeholder"></b-img>
                 </template>
 
                 <h5 class="mt-0 mb-1">Поминальные обеды</h5>
@@ -24,7 +24,7 @@
 
             <b-media tag="li">
                 <template #aside>
-                    <b-img src="https://cdn-icons-png.flaticon.com/512/6143/6143607.png" width="64" alt="placeholder"></b-img>
+                    <b-img src="../../assets/about-pic3.png" width="64" height="64" alt="placeholder"></b-img>
                 </template>
 
                 <h5 class="mt-0 mb-1">Проведение банкетов</h5>

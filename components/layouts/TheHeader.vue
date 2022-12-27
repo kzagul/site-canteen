@@ -1,6 +1,6 @@
 <template>
   <b-navbar class="border-bottom" style="background-color: white;">
-    <b-container class="d-flex flex-row px-3">
+    <b-container class="d-flex flex-row px-1 px-md-3">
       <!-- <div>
         <b-navbar-brand>
           <b-link to="/">Столовая</b-link>
