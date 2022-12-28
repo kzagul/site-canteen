@@ -21,7 +21,7 @@
     </div>
     </div>
 
-    <div class="mt-5 pb-5">
+    <div class="mt-5 pb-0 pb-md-5">
       <AboutBlockVue />
     </div>
 
@@ -32,8 +32,8 @@
 
     <SliderVue :sportObjects="items"/>
 
-    <b-media class="my-5 pb-5">
-      <h5 class="mt-4 mb-1">Все по-домашнему</h5>
+    <b-media class="mt-1 mt-md-5 mb-5 pb-5">
+      <h5 class="mt-2 mt-md-4 mb-1">Все по-домашнему</h5>
       <p class="my-4">
         Мы страемся, чтобы у каждый наш клиент мог найти для себя свою любимую еду!
         А после визита к нам оставались хорошее впечатление и приятное послевкусие! <b>С заботой о вас!</b>

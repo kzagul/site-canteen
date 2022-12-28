@@ -6,13 +6,33 @@
           <!-- <div class="swiper-slide " v-for="sportObject in sportObjects" :key="sportObject.id">
             <ProductCard :sportObjects="sportObject"/>
           </div> -->
-          <div class="swiper-slide " v-for="obj in objs" :key="obj.id">
+
+          <!-- <div class="swiper-slide " v-for="obj in objs" :key="obj.id">
             <b-card
               tag="article"
               style="width: 80%; height: auto"
               class="mb-2 p-0"
             >
               <b-card-img :src="obj.image" style="width: 100%; height: auto; padding: -1rem" alt="Image" class="rounded-0 p-0"></b-card-img>
+            </b-card>
+          </div> -->
+
+          <div class="swiper-slide ">
+            <b-card
+              tag="article"
+              style="width: 80%; height: auto"
+              class="mb-2 p-0"
+            >
+              <b-card-img src="../assets/outlook1.png" style="width: 100%; height: auto; padding: -1rem" alt="Image" class="rounded-0 p-0"></b-card-img>
+            </b-card>
+          </div>
+          <div class="swiper-slide ">
+            <b-card
+              tag="article"
+              style="width: 80%; height: auto"
+              class="mb-2 p-0"
+            >
+              <b-card-img src="../assets/outlook2.png" style="width: 100%; height: auto; padding: -1rem" alt="Image" class="rounded-0 p-0"></b-card-img>
             </b-card>
           </div>
         </div>

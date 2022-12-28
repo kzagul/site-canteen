@@ -23,7 +23,10 @@
       </b-collapse> -->
       <div>
         <!-- <b-link to="menu" class="pr-4">Меню</b-link> -->
-        <b-link to="price">Только цены</b-link>
+        <!-- <b-link to="price">Только цены</b-link> -->
+        <b-button style="background-color: white; border-color: white;" class="align-items-start p-0" v-b-tooltip.hover title="Позвоните, мы с радостью ответим!">
+          <a href="tel:+79829049070" style="color: grey;"> +7 (982) 904‒90‒70 </a>
+        </b-button>
       </div>
     </b-container>
   </b-navbar>
