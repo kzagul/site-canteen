@@ -15,37 +15,32 @@
       <b-jumbotron class="text-dark d-flex flex-column flex-md-row align-items-center py-5 justify-content-center" bg-variant="transparent">
         <p class="lead m-0">Узнать актуальную информацию по еде</p>
         <b-button variant="primary" class="mt-3 mt-md-0 ml-3">
-          <b-link to="menu" style="color: white;">Перейти к меню</b-link>
+          <b-link to="price" style="color: white;">Перейти к ценам</b-link>
         </b-button>
       </b-jumbotron>
     </div>
     </div>
 
-    <div class="mt-5">
+    <div class="mt-5 pb-5">
       <AboutBlockVue />
     </div>
 
-    <div class="mt-5 mb-2">
-      <h1>Еда</h1>
+    <!-- <div class="mt-5 mb-2"> -->
+      <!-- <h1>Еда</h1> -->
       <!-- <TheMenu /> -->
-    </div>
-
+    <!-- </div> -->
 
     <SliderVue :sportObjects="items"/>
-    <!-- <SliderVue :sportObjects="items"/>
-    <SliderVue :sportObjects="items"/> -->
 
-    <b-media>
-      <h5 class="mt-4 mb-1">Горячие блюда</h5>
-      <p class="mb-0">
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-        ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <b-media class="my-5 pb-5">
+      <h5 class="mt-4 mb-1">Все по-домашнему</h5>
+      <p class="my-4">
+        Мы страемся, чтобы у каждый наш клиент мог найти для себя свою любимую еду!
+        А после визита к нам оставались хорошее впечатление и приятное послевкусие! <b>С заботой о вас!</b>
       </p>
     </b-media>
-    
 
-    <div class="mt-5 mb-5">
+    <div class="my-5 pb-5">
       <h1 class="my-4">Только цены</h1>
       <PriceTable :items="items"/>
     </div>
@@ -76,7 +71,7 @@ export default {
           weight: "100г",
           price: "55-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+          image: "https://downloader.disk.yandex.ru/preview/8486befb68cb589186d78f951495a2eb97a8ba44ee7c09ad112e96252a0a8e9f/63acbb7d/op_W-a8glYLpby79kbSTsCI-a3Vs8zQvD_3B8nOHGg3ffUAd7zLepKVbqqtSlesVwJYlPwDQQpKXcOpOwweuCA%3D%3D?uid=0&filename=salad1a.jpeg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
         },
         {
           id: 2,
@@ -85,7 +80,7 @@ export default {
           weight: "100г",
           price: "55-00",
           recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
-          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+          image: 'https://3.downloader.disk.yandex.ru/preview/846d6be9b794042e5ea15dc8dc30e52347f05b278f1b67455bd70d4774d6e2f5/inf/F2sXYmMNH1yHK9VDeqFpoNJ09jbCzvd8dXNP-sJ1CCGoF4peRRrWngNOa7vObyGsPs9YHJZDX73c7RnvRNqeuA%3D%3D?uid=591156921&filename=outlook1.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=591156921&tknv=v2&size=2994x1690',
         },
         {
           id: 3,
@@ -165,7 +160,7 @@ export default {
           name: "Харчо",
           weight: "300г",
           price: "75-00",
-          recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          recipe: "",
           image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
@@ -174,7 +169,7 @@ export default {
           name: "Солянка по-домашнему",
           weight: "300г",
           price: "75-00",
-          recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          recipe: "",
           image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
@@ -183,7 +178,7 @@ export default {
           name: "Борщ",
           weight: "300г",
           price: "70-00",
-          recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          recipe: "",
           image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
@@ -192,7 +187,7 @@ export default {
           name: "Рассольник",
           weight: "300г",
           price: "70-00",
-          recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          recipe: "",
           image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
@@ -201,7 +196,7 @@ export default {
           name: "Суп гороховый с копченостями",
           weight: "300г",
           price: "70-00",
-          recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          recipe: "",
           image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
@@ -210,7 +205,7 @@ export default {
           name: "Суп-лапша с курицей",
           weight: "300г",
           price: "60-00",
-          recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          recipe: "",
           image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
         {
@@ -219,7 +214,322 @@ export default {
           name: "Котлета домашняя",
           weight: "100г",
           price: "90-00",
-          recipe: "Колбаса п/к, сыр, яйцо, помидор, майонез",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 18,
+          type: "Вторые блюда",
+          name: "Тефтели мясные в томатном соусе",
+          weight: "100г",
+          price: "100-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 19,
+          type: "Вторые блюда",
+          name: "Жаркое по-домашнему",
+          weight: "250г",
+          price: "120-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 20,
+          type: "Вторые блюда",
+          name: "Манты по-казахски",
+          weight: "100г",
+          price: "85-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 21,
+          type: "Вторые блюда",
+          name: "Гуляш из говядины",
+          weight: "75г",
+          price: "120-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 22,
+          type: "Вторые блюда",
+          name: "Печень говяжья жаренная с луком",
+          weight: "100г",
+          price: "90-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 23,
+          type: "Вторые блюда",
+          name: "Плов из свинины",
+          weight: "270г",
+          price: "130-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 24,
+          type: "Вторые блюда",
+          name: "Отбивная из свинины",
+          weight: "100г",
+          price: "120-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 25,
+          type: "Вторые блюда",
+          name: "Куриная отбивная запеченная",
+          weight: "100г",
+          price: "95-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 26,
+          type: "Вторые блюда",
+          name: "Желудки, печень, сердечки куриные жареные с луком",
+          weight: "100г",
+          price: "85-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 27,
+          type: "Вторые блюда",
+          name: "Окорочок запеченный",
+          weight: "100г",
+          price: "85-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 28,
+          type: "Вторые блюда",
+          name: "Котлета рыбная",
+          weight: "100г",
+          price: "75-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 29,
+          type: "Вторые блюда",
+          name: "Минтай жареный",
+          weight: "100г",
+          price: "65-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 30,
+          type: "Вторые блюда",
+          name: "Камбала жареная",
+          weight: "100г",
+          price: "65-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 31,
+          type: "Гарниры",
+          name: "Картофельное пюре",
+          weight: "200г",
+          price: "45-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 32,
+          type: "Гарниры",
+          name: "Макароны отварные",
+          weight: "150г",
+          price: "35-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 33,
+          type: "Гарниры",
+          name: "Каша гречневая",
+          weight: "150г",
+          price: "50-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 34,
+          type: "Гарниры",
+          name: "Перловка с овощами",
+          weight: "150г",
+          price: "35-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 35,
+          type: "Гарниры",
+          name: "Капуста тушенная",
+          weight: "150г",
+          price: "45-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 36,
+          type: "Гарниры",
+          name: "Горошница",
+          weight: "150г",
+          price: "35-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 37,
+          type: "Гарниры",
+          name: "Рис с овощами",
+          weight: "150г",
+          price: "45-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 38,
+          type: "Гарниры",
+          name: "Овощи",
+          weight: "100г",
+          price: "40-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 39,
+          type: "Выпечка",
+          name: "Самса с мясом",
+          weight: "140г",
+          price: "60-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 40,
+          type: "Выпечка",
+          name: "Чебурек",
+          weight: "110г",
+          price: "50-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 41,
+          type: "Выпечка",
+          name: "Беляш",
+          weight: "100г",
+          price: "50-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 42,
+          type: "Выпечка",
+          name: "Пицца с колбасой",
+          weight: "150г",
+          price: "55-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 43,
+          type: "Выпечка",
+          name: "Сосиска в тесте",
+          weight: "100г",
+          price: "40-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 44,
+          type: "Выпечка",
+          name: "Хачапури",
+          weight: "100г",
+          price: "50-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 45,
+          type: "Выпечка",
+          name: "Пирожок с яйцом и луком",
+          weight: "100г",
+          price: "30-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 46,
+          type: "Выпечка",
+          name: "Пирожок с рисом и грибами",
+          weight: "100г",
+          price: "30-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 47,
+          type: "Выпечка",
+          name: "Пирожок с картофелем",
+          weight: "100г",
+          price: "25-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 48,
+          type: "Выпечка",
+          name: "Пирожок с капустой",
+          weight: "100г",
+          price: "25-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 49,
+          type: "Выпечка",
+          name: "Конвертик творожный",
+          weight: "80г",
+          price: "40-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 50,
+          type: "Выпечка",
+          name: "Брауни",
+          weight: "100г",
+          price: "40-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 51,
+          type: "Напитки",
+          name: "Компот с вишней",
+          weight: "200г",
+          price: "25-00",
+          recipe: "",
+          image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
+        },
+        {
+          id: 52,
+          type: "Напитки",
+          name: "Компот с сухофруктами",
+          weight: "200г",
+          price: "25-00",
+          recipe: "",
           image: "https://cdn.lifehacker.ru/wp-content/uploads/2017/01/Kak-pravilno-varit-grechku_1586299544_1586323930.jpg",
         },
       ],
@@ -232,26 +542,6 @@ export default {
         { type: "Напитки"}
       ],
     };
-  },
-  computed: {
-    zacuski () {
-
-    },
-    firstFood () {
-
-    },
-    secondFood () {
-
-    },
-    garniry () {
-
-    },
-    vypechka () {
-
-    },
-    drinks () {
-
-    }
   }
 };
 </script>

@@ -22,7 +22,7 @@
         </b-navbar-nav>
       </b-collapse> -->
       <div>
-        <b-link to="menu" class="pr-4">Меню</b-link>
+        <!-- <b-link to="menu" class="pr-4">Меню</b-link> -->
         <b-link to="price">Только цены</b-link>
       </div>
     </b-container>

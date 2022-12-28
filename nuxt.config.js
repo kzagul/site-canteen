@@ -3,7 +3,7 @@ export default {
   ssr: true,
   target: 'static',
   head: {
-    title: 'site-canteen',
+    title: 'Столовая фирменная',
     htmlAttrs: {
       lang: 'en'
     },
