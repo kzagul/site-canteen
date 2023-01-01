@@ -43,7 +43,7 @@
           </li>
           <li class="ms-3 mt-3 mb-5">
             <b-button style="background-color: white; border-color: white;" class="align-items-start p-0" v-b-tooltip.hover title="Напишите, мы с радостью ответим!">
-              <a href="mailto:zagulkirill@gmail.com" style="color: grey;">michail@mail.ru</a>
+              <a href="mailto:spektr.tmn@mail.ru" style="color: grey;">Контактная почта</a>
             </b-button>
           </li>
         </ul>
